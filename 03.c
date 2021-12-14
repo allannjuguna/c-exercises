@@ -2,7 +2,7 @@
 Edabit : Challenge one
 Rank : Very Easy
 Language : C
-Challenge : challengedescription here
+Challenge : Return the sum of two numbers.Create a function that takes two numbers
 
 */
 #include <stdio.h>
@@ -10,11 +10,18 @@ Challenge : challengedescription here
 #include <stdlib.h>
 
 
-void somefunction(void);
-int main(int argc,char **argv){
-	printf("This is the first function\n");
+int addnumbers(int a,int b);
 
+int main(int argc,char **argv){
+	int a,b;
+	a=5;
+	b=15;
+
+	int result=addnumbers(a,b);
+	printf("The sum of the two numbers is %d\n", result );
 	return 0;
 }
 
-void somefunction(void);
+int addnumbers(int a,int b){
+	return (a + b);
+}
